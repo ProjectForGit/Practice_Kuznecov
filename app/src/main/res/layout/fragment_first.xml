@@ -6,8 +6,11 @@
     tools:context=".FirstFragment">
 
     <TextView
+        android:id="@+id/textView"
+        android:textSize="25dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="First Fragment" />
+        android:textColor="#000000"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
