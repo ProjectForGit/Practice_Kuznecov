@@ -3,29 +3,15 @@ package com.example.practice
 import android.app.Activity
 import android.content.Context
 import android.os.Bundle
-import android.telecom.Call
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.AnimationUtils
 import android.widget.TextView
 import android.widget.Toast
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.practice.models.Interface
 import com.example.practice.models.Weather
-import com.google.gson.Gson
-import kotlinx.android.synthetic.main.fragment_seconf.*
-import okhttp3.Callback
-import okhttp3.OkHttpClient
-import okhttp3.Request
-import okhttp3.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.io.IOException
-import kotlin.math.log
 import kotlin.math.roundToInt
 
 // TODO: Rename parameter arguments, choose names that match

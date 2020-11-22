@@ -1,5 +1,6 @@
-package com.example.practice.models
+package com.example.practice
 
+import com.example.practice.models.Weather
 import retrofit2.http.GET
 import retrofit2.Call
 import retrofit2.http.Query
