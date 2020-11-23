@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import android.widget.TextView
 import android.widget.Toast
 import com.example.practice.models.Weather
@@ -33,9 +34,6 @@ class FirstFragment : Fragment() {
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
-
-
-
         }
     }
 
@@ -51,7 +49,7 @@ class FirstFragment : Fragment() {
             return root
         }
 
-        val weatherText = root.findViewById<TextView>(R.id.textView)
+        val Text = root.findViewById<TextView>(R.id.textView)
 
         val retrofit = Retrofit.Builder()
             .baseUrl(request)
@@ -61,11 +59,10 @@ class FirstFragment : Fragment() {
                 it.create(Interface::class.java)
                     .getWeather("Москва", BuildConfig.API_KEY).enqueue(object :
                         retrofit2.Callback<Weather> {
-                        val activity = (context as Activity)
 
 
                         override fun onFailure(call: retrofit2.Call<Weather>, t: Throwable) {
-                            Toast.makeText(context, "При отправке запроса произошла ошибка.", Toast.LENGTH_LONG).show()
+                            Toast.makeText(context, "Произошла ошибка.", Toast.LENGTH_LONG).show()
                         }
 
                         override fun onResponse(
@@ -82,15 +79,16 @@ class FirstFragment : Fragment() {
                                             "Snow" -> "Пора слепить снеговика!"
                                             "Broken clouds" -> "Советуем одеться потеплее"
                                             "Clear" -> "Лучшее время, чтобы выйти на прогулку"
-                                            "Clouds" -> "Можно не надолго выйти погулять"
+                                            "Clouds" -> "Можно ненадолго выйти погулять"
                                             else -> "Советуем остаться дома"
                                         }
                             (context as Activity).runOnUiThread {
-                                weatherText.text = message
+                                Text.text = message
                             }
                         }
                     })
             }
+        Text.startAnimation(AnimationUtils.loadAnimation(context, R.anim.blure))
 
         return root
     }

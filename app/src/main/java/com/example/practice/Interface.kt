@@ -14,5 +14,4 @@ interface Interface {
         @Query("appid") appId: String
 
     ): Call<Weather>
-
 }

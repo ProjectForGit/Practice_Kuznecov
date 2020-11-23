@@ -1,7 +1,7 @@
 [
     {
-        "merged": "C:\\IntelliJIdea\\Practice\\app\\build\\intermediates\\res\\merged\\debug\\anim_left.xml.flat",
-        "source": "C:\\IntelliJIdea\\Practice\\app\\src\\main\\res\\anim\\left.xml"
+        "merged": "C:\\IntelliJIdea\\Practice\\app\\build\\intermediates\\res\\merged\\debug\\anim_blure.xml.flat",
+        "source": "C:\\IntelliJIdea\\Practice\\app\\src\\main\\res\\anim\\blure.xml"
     },
     {
         "merged": "C:\\IntelliJIdea\\Practice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
@@ -10,6 +10,10 @@
     {
         "merged": "C:\\IntelliJIdea\\Practice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
         "source": "C:\\IntelliJIdea\\Practice\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\IntelliJIdea\\Practice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_cloud.jpg.flat",
+        "source": "C:\\IntelliJIdea\\Practice\\app\\src\\main\\res\\drawable-v24\\cloud.jpg"
     },
     {
         "merged": "C:\\IntelliJIdea\\Practice\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",

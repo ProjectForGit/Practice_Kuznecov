@@ -14,8 +14,6 @@ import kotlinx.android.synthetic.main.fragment_seconf.*
 
 class MainActivity : AppCompatActivity() {
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,14 +27,7 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         bottomNavigationView.setupWithNavController(navController)
-
-
-
-
-
     }
-
-    //Анимации
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.fragment)

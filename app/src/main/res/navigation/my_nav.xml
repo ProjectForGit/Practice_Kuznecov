@@ -21,7 +21,6 @@
         tools:layout="@layout/fragment_seconf" >
         <action
             android:id="@+id/action_secondFragment_to_firstFragment"
-            app:destination="@id/firstFragment"
-            app:enterAnim="@anim/left" />
+            app:destination="@id/firstFragment"/>
     </fragment>
 </navigation>

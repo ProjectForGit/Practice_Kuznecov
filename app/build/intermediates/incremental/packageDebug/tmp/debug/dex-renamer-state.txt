@@ -1,4 +1,4 @@
-#Sun Nov 22 15:23:54 MSK 2020
+#Mon Nov 23 14:13:06 MSK 2020
 base.0=C\:\\IntelliJIdea\\Practice\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
